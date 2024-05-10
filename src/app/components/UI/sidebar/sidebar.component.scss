@@ -1,0 +1,21 @@
+nav {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
+    height: 80px;
+    align-items: center;
+}
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.sidebar {
+    width: 100%;
+    background-color: #c8000a;
+    margin: 7px 0;
+}
+nav .active{
+    color: black;
+}
