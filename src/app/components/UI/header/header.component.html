@@ -1,7 +1,19 @@
-<div class="header">
+<header>
     <h1>Eclipse-lingerie</h1>
     <a routerLink='/' ><img src='../../../../assets/icon.jpg' ></a>
     <p>0 800 524 09 09</p>
     <p>з 9:00 до 18:00</p>
+</header>
+<div class="container">
+    <div class="search">
+        <a routerLink='' routerLinkActive ='active'><fa-icon [icon]="faMagnifyingGlass"></fa-icon></a>
+    </div>
+    <div class="user">
+        <a routerLink='' routerLinkActive ='active'><fa-icon [icon]="faUser"></fa-icon></a>
+    </div>
+    <div class="basket">
+        <a routerLink='' routerLinkActive ='active'><fa-icon [icon]="faBasket"></fa-icon></a>
+        <span class="counter">4</span>
+    </div>
 </div>
 

@@ -1,0 +1,35 @@
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #c8000a;
+    margin-top: 7px;
+    height: 250px;
+}
+footer h2, p{
+    color: white;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+    &:hover {
+        color: pink;
+    }
+}
+footer li {
+    list-style-type: none;
+    margin: 5px 0;
+}
+footer ul {
+    padding: 0;
+}
+aside img {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
+.license {
+    color: lemonchiffon;
+    background-color: #c8000a;
+    margin: 0;
+    padding-left: 30px;
+}
