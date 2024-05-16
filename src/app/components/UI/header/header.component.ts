@@ -4,6 +4,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faBasketShopping } from '@fortawesome/free-solid-svg-icons';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+import { faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faClock } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-header',
@@ -16,5 +18,6 @@ export class HeaderComponent {
   faUser = faUser
   faBasket=faBasketShopping;
   faMagnifyingGlass =faMagnifyingGlass;
-
+  faPhone=faPhone;
+  faClock = faClock;
 }
