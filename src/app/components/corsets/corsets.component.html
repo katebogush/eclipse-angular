@@ -7,9 +7,12 @@
         дорого. Тепер купити корсет може будь-яка представниця слабкої статі, яка бажає підкреслити свою індивідуальність.
          Сучасні модельєри пропонують величезний вибір моделей корсетів. Київ - це колиска української моди і наші 
          співвітчизники знають толк в жіночій красі.</p>
-    <ul>
-        <li *ngFor="let corset of corsetsList">
-            <p>{{corset.price}}</p>
-        </li>
+    <ul class="productsList">
+        <ng-container *ngFor="let item of corsetsList">
+            <li>
+                <app-product-catd [product]="item"></app-product-catd>
+            </li>
+        </ng-container>
     </ul>
+
 </div>

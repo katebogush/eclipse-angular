@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { CorsetsService } from '../../corsets.service';
+import { CorsetsService } from '../../services/corsets.service';
 import { CommonModule} from '@angular/common';
+import {ProductCatdComponent } from '../product-catd/product-catd.component';
 
 @Component({
   selector: 'app-corsets',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, ProductCatdComponent],
   templateUrl: './corsets.component.html',
   styleUrl: './corsets.component.scss'
 })

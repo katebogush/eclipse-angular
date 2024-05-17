@@ -1,0 +1,7 @@
+<div class="productCard">
+    <img src="{{product.image}}">
+    <h3>{{product.title}}</h3>
+    <p>Код: {{product.id}}</p>
+    <p>{{product.price | currency:'USD'}}</p>
+    <button class= "details" [routerLink]="['/product', product.id]">Детальніше</button>
+</div>
