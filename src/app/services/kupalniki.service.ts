@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { IProducts } from '../models/products';
+import { IProduct } from '../models/products';
 
 
 @Injectable({
@@ -7,7 +7,7 @@ import { IProducts } from '../models/products';
 })
 export class KupalnikiService {
 
-  private kupalniki:IProducts[] = [
+  private kupalniki:IProduct[] = [
     {
       id: 2212,
       title: "Купальник model 1",

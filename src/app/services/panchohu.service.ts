@@ -1,12 +1,12 @@
 import { Injectable } from '@angular/core';
-import { IProducts } from '../models/products';
+import { IProduct } from '../models/products';
 
 @Injectable({
   providedIn: 'root'
 })
 export class PanchohuService {
 
-  private panchohu:IProducts[] = [
+  private panchohu:IProduct[] = [
     {
       id: 3313,
       title: "Панчохи model 1",
