@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
+import { ActiveProductService } from '../../services/active-product.service';
+import { IProduct } from '../../models/products';
 
 @Component({
   selector: 'app-product-details',
@@ -7,6 +9,20 @@ import { Component } from '@angular/core';
   templateUrl: './product-details.component.html',
   styleUrl: './product-details.component.scss'
 })
-export class ProductDetailsComponent {
+export class ProductDetailsComponent{
+
+
+
+  product = this.activeProductService.get();
+
+  constructor(private activeProductService: ActiveProductService){
+
+  }
+
+  
+
+
+
+
 
 }
