@@ -1,1 +1,23 @@
-<p>basket works!</p>
+<div class="basket">
+    <div class="itemsList">
+        <ul class="items">
+            <ng-container *ngFor="let item of itemsList">
+                <button class="deleteItemFromList" (click)= removeProductFromBasket(item)>X</button>
+                <li>
+                    <div class="productFoto">
+                        <img src='{{item.image}}'>
+                    </div>
+                    <div class="productInfo">
+                        <h3>{{item.title}}</h3>
+                        <p>{{item.price | currency:'USD'}}</p>
+                        <button (click)= "decrease(item)">-</button>
+                        <span>{{item.quantity}}</span>
+                        <button (click)= "increase(item)">+</button>
+                        <p>Сума:</p>
+                    </div>
+                </li>
+            </ng-container>
+        </ul>
+    </div>
+<button class ='next'>Далі</button>
+</div>
