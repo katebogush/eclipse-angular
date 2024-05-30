@@ -39,7 +39,8 @@ export class BasketService {
     private mapToBasketItem(product:IProduct): BasketItem {
       const basketItem = {
         ...product, 
-        quantity:1
+        quantity:1,
+        totalSum:product.price
       }
       return basketItem
     }
@@ -49,6 +50,7 @@ export class BasketService {
     const index= this.basketProducts.findIndex(item=>item.id === id)
     this.basketProducts.splice(index, 1)
   }
+
 
 
 }

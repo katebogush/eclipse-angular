@@ -26,7 +26,7 @@ export class BasketComponent implements OnInit{
 
   increase(item:BasketItem){
     item.quantity++
-    console.log(item)
+    item.totalSum = item.quantity*item.price
   }
 
   decrease(item:BasketItem){
@@ -34,10 +34,13 @@ export class BasketComponent implements OnInit{
     if(item.quantity<0){
       item.quantity = 0
     }
+    item.totalSum = item.quantity*item.price
   }
 
   removeProductFromBasket(item:BasketItem){
     this.basketServise.removeItem(item.id)
   }
+
+
 
 }

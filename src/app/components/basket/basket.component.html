@@ -13,11 +13,12 @@
                         <button (click)= "decrease(item)">-</button>
                         <span>{{item.quantity}}</span>
                         <button (click)= "increase(item)">+</button>
-                        <p>Сума:</p>
+                        <p>Сума:{{item.totalSum | currency:'USD'}}</p>
                     </div>
                 </li>
             </ng-container>
         </ul>
     </div>
+    <p>Разом:</p>
 <button class ='next'>Далі</button>
 </div>
